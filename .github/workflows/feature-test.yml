@@ -1,0 +1,12 @@
+name: Test Feature Branch
+
+on:
+  push:
+    branches:
+      - feature/test-action
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 Running workflow on feature/test-action branch!"
